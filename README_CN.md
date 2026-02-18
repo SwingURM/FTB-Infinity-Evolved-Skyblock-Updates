@@ -15,6 +15,7 @@
   - *原因*：Magic Bees 将钻石颗粒注册为钻石粒的词典，导致 Agricraft 放弃了自己的钻石粒注册和配方，但 Magic Bees 自身没有添加由钻石合成钻石颗粒的配方，破坏了钻石粒与压缩抽屉的原有互动
 - 禁用 chisel aeskystone 配置（在近期测试版本中无法启动）
 - 禁用 Hodgepodge 的 eventbus配置项（InpureCore）(https://github.com/GTNewHorizons/Hodgepodge/issues/627)
+- 适应到当前EnderIO的脉冲合金(Vibrant Alloy)的新的矿物词典ID。
 
 其余所有新增配置均为自动生成的新配置项。部分配置（如 NEI 物品组合并）参考自 GTNH 模组包，非常感谢 GTNH 社区的贡献。
 
@@ -44,7 +45,6 @@
 
 ## 已知问题
 
-- **硅蜜蜂被禁用**：Magic Bees 改用是否存在硅粉来决定硅蜜蜂是否生成，导致硅蜜蜂及后续的 Infinity 蜂等被禁用。解决方案尚未确定（可能需创建补丁模组或 fork Magic Bees）
-- **Infinity 蜂双路线**：修复上述问题后，存在两条杂交路线可通往最终的 Infinity 蜂，原因不明
+- **硅蜜蜂被禁用**：Magic Bees 改用是否存在硅粉来决定硅蜜蜂是否生成，导致硅蜜蜂及后续的 Infinity 蜂等被禁用。此外还有些许蜜蜂的产物和产物爆率有所改变。解决方案尚未确定（可能需创建补丁模组或 fork Magic Bees）。
 - **Ex Nihilo 筛子进度异步**：最新 release 版本的 3x3 筛子进度不同步
 - **Ex Nihilo 石桶可无限添加固体**: 最新release下石桶可超出容量地不断加入石头
